@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'tekla.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'template1',
+        'USER': 'postgres',
+        'PASSWORD': '2945m@n$68#',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
