@@ -1,0 +1,22 @@
+
+##################### Banco de Dados #####################
+Usuario Banco Postgres:
+postgres
+
+Senha do Usuario Postgres:
+2945m@n$68#
+
+##################### Super User ####################
+Usuario:
+heluisa
+
+Senha:
+4568m#n@29$!
+
+################### E-mail Projeto #################
+Email:
+heluisatekla@gmail.com
+
+Senha:
+4568m#n@29$!
+
