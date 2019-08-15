@@ -1,0 +1,25 @@
+
+body{
+grid-template-areas:'nav nav nav nav'
+                    'header header header header'
+                    'sec    sec    sec    sec'
+                    'section  section  section  section'
+                    'footer footer footer footer';
+grid-auto-rows: 1.5vh 90vh 30vh 20vh 70vh 20vh;
+grid-auto-columns: 25% 25% 25% 25%;  
+}
+
+
+nav{
+    grid-area: nav;
+    background-color: aquamarine;    
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+h1{
+    color: blue;
+}
