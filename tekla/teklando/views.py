@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from teklando.models import Voluntario
 
 # Create your views here.
 
