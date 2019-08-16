@@ -1,6 +1,101 @@
 from django.db import models
 
 
+class Escola(models.Model):
+    ESTADOS = (
+        ('AC', 'Acre'),
+        ('AL', 'Alagoas'),
+        ('AP', 'Amapá'),
+        ('AM', 'Amazonas'),
+        ('BA', 'Bahia'),
+        ('CE', 'Ceará'),
+        ('DF', 'Distrito Federal'),
+        ('ES', 'Espírito Santo'),
+        ('GO', 'Goiás'),
+        ('MA', 'Maranhão'),
+        ('MT', 'Mato Grosso'),
+        ('MS', 'Mato Grosso do Sul'),
+        ('MG', 'Minas Gerais'),
+        ('PA', 'Pará'),
+        ('PB', 'Paraíba'),
+        ('PR', 'Paraná'),
+        ('PE', 'Pernambuco'),
+        ('PI', 'Piauí'),
+        ('RJ', 'Rio de Janeiro'),
+        ('RN', 'Rio Grande do Norte'),
+        ('RS', 'Rio Grande do Sul'),
+        ('RO', 'Rondônia'),
+        ('PR', 'Roraima'),
+        ('SC', 'Santa Catarina'),
+        ('SP', 'São Paulo'),
+        ('SE', 'Sergipe'),
+        ('TO', 'Tocantins'),
+    )
+
+    nome = models.CharField(
+        max_length=255,
+        verbose_name='Nome'
+    )
+
+    endereco = models.CharField(
+        max_length=255,
+        verbose_name='Endereço'
+    )
+
+    numero = models.CharField(
+        max_length=255,
+        verbose_name='Número'
+    )
+
+    cep = models.CharField(
+        max_length=255,
+        verbose_name='CEP'
+    )
+
+    bairro = models.CharField(
+        max_length=255,
+        verbose_name='Bairro'
+    )
+
+    cidade = models.CharField(
+        max_length=255,
+        verbose_name='Cidade'
+    )
+
+    estado = models.CharField(
+        max_length=255,
+        verbose_name='Estado',
+        choices=ESTADOS
+    )
+
+    data_de_criacao = models.DateTimeField(auto_now_add=True)
+    ativo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nome
+
+
+class Atividade(models.Model):
+    nome = models.CharField(
+        max_length=255,
+        verbose_name='Atividade'
+    )
+
+    horario = models.DateField(
+        verbose_name='Horário'
+    )
+
+    descricao = models.TextField()
+
+    escolas = models.ManyToManyField(Escola)
+
+    data_de_criacao = models.DateTimeField(auto_now_add=True)
+    ativo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nome
+
+
 class Voluntario(models.Model):
     GENEROS = (
         ('M', 'Masculino'),
@@ -144,6 +239,11 @@ class Voluntario(models.Model):
 
     objetivo = models.TextField()
 
+    atividades = models.ManyToManyField(
+        Atividade,
+        blank=True
+    )
+
     data_de_criacao = models.DateTimeField(auto_now_add=True)
     ativo = models.BooleanField(default=True)
 
@@ -151,96 +251,6 @@ class Voluntario(models.Model):
         return self.nome + ' ' + self.sobrenome
 
 
-class Escola(models.Model):
-    ESTADOS = (
-        ('AC', 'Acre'),
-        ('AL', 'Alagoas'),
-        ('AP', 'Amapá'),
-        ('AM', 'Amazonas'),
-        ('BA', 'Bahia'),
-        ('CE', 'Ceará'),
-        ('DF', 'Distrito Federal'),
-        ('ES', 'Espírito Santo'),
-        ('GO', 'Goiás'),
-        ('MA', 'Maranhão'),
-        ('MT', 'Mato Grosso'),
-        ('MS', 'Mato Grosso do Sul'),
-        ('MG', 'Minas Gerais'),
-        ('PA', 'Pará'),
-        ('PB', 'Paraíba'),
-        ('PR', 'Paraná'),
-        ('PE', 'Pernambuco'),
-        ('PI', 'Piauí'),
-        ('RJ', 'Rio de Janeiro'),
-        ('RN', 'Rio Grande do Norte'),
-        ('RS', 'Rio Grande do Sul'),
-        ('RO', 'Rondônia'),
-        ('PR', 'Roraima'),
-        ('SC', 'Santa Catarina'),
-        ('SP', 'São Paulo'),
-        ('SE', 'Sergipe'),
-        ('TO', 'Tocantins'),
-    )
-
-    nome = models.CharField(
-        max_length=255,
-        verbose_name='Nome'
-    )
-
-    endereco = models.CharField(
-        max_length=255,
-        verbose_name='Endereço'
-    )
-
-    numero = models.CharField(
-        max_length=255,
-        verbose_name='Número'
-    )
-
-    cep = models.CharField(
-        max_length=255,
-        verbose_name='CEP'
-    )
-
-    bairro = models.CharField(
-        max_length=255,
-        verbose_name='Bairro'
-    )
-
-    cidade = models.CharField(
-        max_length=255,
-        verbose_name='Cidade'
-    )
-
-    estado = models.CharField(
-        max_length=255,
-        verbose_name='Estado',
-        choices=ESTADOS
-    )
-
-    data_de_criacao = models.DateTimeField(auto_now_add=True)
-    ativo = models.BooleanField(default=True)
-
-    def __str__(self):
-        return self.nome
-
-
-class Atividade(models.Model):
-    nome = models.CharField(
-        max_length=255,
-        verbose_name='Atividade'
-    )
-
-    horario = models.DateField(
-        verbose_name='Horário'
-    )
-
-    descricao = models.TextField()
-
-    escolas = models.ManyToManyField(Escola)
-
-    data_de_criacao = models.DateTimeField(auto_now_add=True)
-    ativo = models.BooleanField(default=True)
-
-    def __str__(self):
-        return self.nome
+class Sugerido(models.Model):
+    voluntarios = models.ForeignKey(Voluntario, on_delete=models.CASCADE)
+    atividades = models.ForeignKey(Atividade, on_delete=models.CASCADE)

@@ -5,3 +5,4 @@ from . import models
 admin.site.register(models.Voluntario)
 admin.site.register(models.Escola)
 admin.site.register(models.Atividade)
+admin.site.register(models.Sugerido)
