@@ -19,7 +19,17 @@ header{
     grid-area: header;
     background-color: blueviolet;
 }
+main{
+    grid-area: sec;
+    background-color: brown;
+}
 
-h1{
-    color: blue;
+section{
+    grid-area: section;
+    background-color: salmon;
+}
+
+footer{
+    grid-area: footer;
+    background-color: blue;
 }
