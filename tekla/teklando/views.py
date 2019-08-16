@@ -32,4 +32,4 @@ def cadastro(request):
         voluntario.save()
         contexto = {'msg': 'Cadastro Efetuado com Sucesso!Realize o seu Login'}
         return render(request, 'login.html', contexto)
-    return render(request, 'index.html')
+    return render(request, 'cadastro.html')

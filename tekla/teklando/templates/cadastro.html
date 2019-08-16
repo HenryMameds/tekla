@@ -1,0 +1,100 @@
+<h2>Cadastre-se</h2>
+{{msg}}
+<form action="/cadastro" method="post">
+    {% csrf_token %}
+    <label>Nome</label>
+    <input type="text" name="nome" required>
+
+    <label>Sobrenome</label>
+    <input type="text" name="sobrenome" required>
+
+    <label>E-mail</label>
+    <input type="email" name="email" required>
+
+    <label>Telefone</label>
+    <input type="text" name="telefone" required>
+
+    <label>Celular</label>
+    <input type="text" name="celular" required>
+
+    <label for="">Gênero</label>
+    <select name="genero" required>
+        <option value="F">Feminino</option>
+        <option value="M">Masculino</option>
+        <option value="O">Outro</option>
+    </select>
+
+    <label>Data de Nascimento</label>
+    <input type="date" name="data_nascimento" required>
+
+    <label>Endereço</label>
+    <input type="text" name="endereco" required>
+
+    <label>Numero</label>
+    <input type="text" name="numero" required>
+
+    <label>Complemento</label>
+    <input type="text" name="complemento" required>
+
+    <label>CEP</label>
+    <input type="text" name="cep" required>
+
+    <label>Bairro</label>
+    <input type="text" name="bairro" required>
+
+    <label>Cidade</label>
+    <input type="text" name="cidade" required>
+
+    <label>Estado</label>
+    <select name="estado" required>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+      <option value="CE">Ceará</option>
+      <option value="DF">Distrito Federal</option>
+      <option value="ES">Espírito Santo</option>
+      <option value="GO">Goiás</option>
+      <option value="MA">Maranhão</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="MG">Minas Geais</option>
+      <option value="PA">Pará</option>
+      <option value="PB">Paraíba</option>
+      <option value="PR">Paraná</option>
+      <option value="PE">Pernambuco</option>
+      <option value="PI">Piauí</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="RO">Rondônia</option>
+      <option value="PR">Roraima</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+    </select>
+
+    <label>Disponibilidade</label>
+    <select name="disponibilidade" required>
+      <option value="ST">Sábado Tarde</option>
+      <option value="SM">Sábado Manhã</option>
+      <option value="DT">Domingo Tarde</option>
+      <option value="DM">Domingo Manhã</option>
+    </select>
+
+    <label>Escolaridade</label>
+    <select  name="escolaridade">
+      <option value="M">Médio</option>
+      <option value="T">Técnico</option>
+      <option value="G">Graduação</option>
+      <option value="PG">Pós-Graduação</option>
+    </select>
+
+    <label>Objetivo</label>
+    <textarea name="objetivo" cols="30" rows="10">
+    </textarea>
+
+    <input type="submit" value="Cadastrar">
+</form>
