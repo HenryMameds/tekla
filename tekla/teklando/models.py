@@ -221,6 +221,9 @@ class Escola(models.Model):
     data_de_criacao = models.DateTimeField(auto_now_add=True)
     ativo = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.nome
+
 
 class Atividade(models.Model):
     nome = models.CharField(
@@ -232,14 +235,12 @@ class Atividade(models.Model):
         verbose_name='Horário'
     )
 
-    escola = models.CharField(
-        max_length=255,
-        verbose_name='Escola'
-    )
-
     descricao = models.TextField()
 
     escolas = models.ManyToManyField(Escola)
 
     data_de_criacao = models.DateTimeField(auto_now_add=True)
     ativo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nome
