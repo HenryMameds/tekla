@@ -32,11 +32,27 @@ def cadastro(request):
         voluntario.objetivo = request.POST.get('objetivo')
         voluntario.save()
         contexto = {'msg':
-                    'Cadastro Efetuado com Sucesso!Crie o seu Usuário e Senha!'
+                    'Cadastro Efetuado com Sucesso! Realize o seu Login!'
                     }
-        return render(request, 'login-cadastro.html', contexto)
+        return render(request, 'login.html', contexto)
     return render(request, 'cadastro.html')
 
 
 def login(request):
+    if request.method == 'POST':
+        email_form = request.POST.get('email')
+        senha_form = request.POST.get('senha')
+        voluntario = Voluntario.objects.filter(
+                                                email=email_form,
+                                                senha=senha_form
+                                                ).first()
+        print('Iae meu bom amigo ', voluntario)
+
+        if voluntario is None:
+            contexto = {'notfound': 'Cadastre-se para ser um voluntario'}
+            return render(request, 'cadastro.html', contexto)
+        else:
+            contexto = {'nome': voluntario}
+            return render(request, 'voluntario.html', contexto)
+
     return render(request, 'login.html')

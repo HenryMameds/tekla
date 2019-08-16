@@ -239,5 +239,7 @@ class Atividade(models.Model):
 
     descricao = models.TextField()
 
+    escolas = models.ManyToManyField(Escola)
+
     data_de_criacao = models.DateTimeField(auto_now_add=True)
     ativo = models.BooleanField(default=True)
