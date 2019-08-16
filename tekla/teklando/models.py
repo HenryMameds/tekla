@@ -67,6 +67,11 @@ class Voluntario(models.Model):
         verbose_name='E-mail'
     )
 
+    senha = models.CharField(
+        max_length=15,
+        verbose_name='Senha'
+    )
+
     telefone = models.CharField(
         max_length=255,
         verbose_name='Telefone',
@@ -144,18 +149,6 @@ class Voluntario(models.Model):
 
     def __str__(self):
         return self.nome + ' ' + self.sobrenome
-
-
-class Login(models.Model):
-    nome_usuario = models.CharField(
-        max_length=30,
-        verbose_name='Nome do Usúario'
-    )
-
-    senha = models.CharField(
-        max_length=15,
-        verbose_name='Senha'
-    )
 
 
 class Escola(models.Model):

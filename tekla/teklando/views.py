@@ -15,6 +15,7 @@ def cadastro(request):
         voluntario.nome = request.POST.get('nome')
         voluntario.sobrenome = request.POST.get('sobrenome')
         voluntario.email = request.POST.get('email')
+        voluntario.senha = request.POST.get('senha')
         voluntario.telefone = request.POST.get('telefone')
         voluntario.celular = request.POST.get('celular')
         voluntario.genero = request.POST.get('genero')
@@ -30,6 +31,12 @@ def cadastro(request):
         voluntario.escolaridade = request.POST.get('escolaridade')
         voluntario.objetivo = request.POST.get('objetivo')
         voluntario.save()
-        contexto = {'msg': 'Cadastro Efetuado com Sucesso!Realize o seu Login'}
-        return render(request, 'login.html', contexto)
+        contexto = {'msg':
+                    'Cadastro Efetuado com Sucesso!Crie o seu Usuário e Senha!'
+                    }
+        return render(request, 'login-cadastro.html', contexto)
     return render(request, 'cadastro.html')
+
+
+def login(request):
+    return render(request, 'login.html')
