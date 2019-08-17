@@ -1,29 +1,75 @@
 
 body{
+margin: 0;
 grid-template-areas:'nav nav nav nav'
                     'header header header header'
                     'sec    sec    sec    sec'
                     'section  section  section  section'
                     'footer footer footer footer';
-grid-auto-rows: 1.5vh 90vh 30vh 20vh 70vh 20vh;
-grid-auto-columns: 25% 25% 25% 25%;  
+grid-auto-rows: 20vh 45vh 45vh 45vh 45vh 20vh;
+grid-auto-columns: 25% 25% 25% 25%;     
+background-color: black;
+
 }
 
 
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
 nav{
     grid-area: nav;
-    background-color: aquamarine;    
+    background-color: #6DC9F7;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.loguinho{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-pequeno{
+    width: 150px;
+    height: 100px;   
+}
+
+.img_logop{
+    width: 50%;
 }
 
 header{
     grid-area: header;
-    background-color: blueviolet;
+    background-color: #6DC9F7;
 }
 main{
     grid-area: sec;
-    background-color: brown;
+    margin: 0;
+    background-color: #6DC9F7;
 }
 
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    font-family: 'Heebo', sans-serif;
+}
+
+.menu2{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: palevioletred;
+    
+}
 section{
     grid-area: section;
     background-color: salmon;
