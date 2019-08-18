@@ -150,7 +150,8 @@ p{
 
 .text_grande{
     color:#3a6da5;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 700;
     text-align: center;
 
 }
@@ -193,15 +194,43 @@ section{
 
 }
 
-.button_volun{
+.btn{
     align-items: center;
     display: flex;
+    color: #d3e9f4;
     justify-content: center;
+    text-transform: uppercase;  
+    font-weight: 600;
+    border: none;
+    padding: 80px;
+    cursor: pointer;
     width: 50%;
+    
 }
 
+.btn_azul{
+    background-color: #3a6da5;
+    box-shadow: 0 5px 0 #27486b;
+    color: #d3e9f4;
+    display: inline-block;
+    display: flex;
+}
+
+.btn_azul:hover{
+    background-color: #27486b;
+    color: #d3e9f4;
+    box-shadow: 0 5px 0 #192e44;
+}
+
+.btn_azul:active{
+    position:relative;
+    top: 5px;
+    box-shadow: none;   
+}
+
+
 .seja_voluntario{
-    width: 50%;
+    width: 60%;
 }
 
 footer{
