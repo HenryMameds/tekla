@@ -144,6 +144,7 @@ h3{
 p{
     display: flex;
     justify-content: center;
+    text-align: center;
     font-family: 'Heebo', sans-serif;
     font-size: 20px;
 }
@@ -195,41 +196,51 @@ section{
 }
 
 .btn{
-    align-items: center;
-    display: flex;
-    color: #d3e9f4;
-    justify-content: center;
-    text-transform: uppercase;  
-    font-weight: 600;
     border: none;
-    padding: 80px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 0 3px #132335;
     cursor: pointer;
-    width: 50%;
+    color: #d3e9f4;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    padding: 0.5em 12em;
+    text-transform: uppercase;  
+    width: 70%;
     
 }
 
 .btn_azul{
-    background-color: #3a6da5;
-    box-shadow: 0 5px 0 #27486b;
-    color: #d3e9f4;
+    border: none;
+    background-color: #27486b;
+    box-shadow: 0 5px 0 #192e44;
+    border: none;
     display: inline-block;
     display: flex;
 }
 
 .btn_azul:hover{
-    background-color: #27486b;
+    background-color: #3a6da5;
+    box-shadow: 0 5px 0 #27486b;
+    border: none;
     color: #d3e9f4;
-    box-shadow: 0 5px 0 #192e44;
 }
 
 .btn_azul:active{
+    border: none;
+    box-shadow: none;   
     position:relative;
     top: 5px;
-    box-shadow: none;   
 }
 
 
 .seja_voluntario{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    align-items: center;
+    margin: 0%;
     width: 60%;
 }
 
