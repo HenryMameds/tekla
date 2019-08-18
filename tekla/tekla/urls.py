@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('teklando.urls'))
+    path('', include('teklando.urls')),
+    path('teklando/', include('django.contrib.auth.urls')),
 ]

@@ -1,25 +1,22 @@
 <h1>Tekla</h1>
-{% if voluntario is None %}
-    <h1>Ops, você precisa se cadastrar</h1>
-    <p>
-        <a href="/cadastro">clique aqui para se cadastrar</a>
-    </p>
-{% else %}
+{% if user.is_authenticated %}
 <h1>Olár Voluntario</h1>
+<p>{{ user.username }}
 
-<h2>{{voluntario}}</h2>
+  <h1>Atividades Sugeridas</h1>
+  <p>
+          {% for sugerido in sugeridos %}
+                  <p>{{sugerido.atividades.nome}}</p>
+                  <p>{{sugerido.atividades.horario}}</p>
+                  <p>{{sugerido.atividades.descricao}}</p>
+                  <a href=""><input type="button" value="Cadastre-se"></a>
+                  <hr>
+          {% endfor %}
+  </p>
 
 
-<h1>Atividades Sugeridas</h1>
-<p>
-        {% for sugerido in sugeridos %}
-                <p>{{sugerido.atividades.nome}}</p>
-                <p>{{sugerido.atividades.horario}}</p>
-                <p>{{sugerido.atividades.descricao}}</p>
-                <a href=""><input type="button" value="Cadastre-se"></a>
-                <hr>
-        {% endfor %}
-</p>
-
-<a href="/atividades">Atividades Participadas</a>
+<p><a href="{% url 'logout' %}">Log out</a></p>
+{% else %}
+<p><a href="{% url 'cadastro' %}">Sign Up</a></p>
+<p><a href="{% url 'login' %}">Log In </a></p>
 {% endif %}

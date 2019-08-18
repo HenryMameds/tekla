@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 
 class Escola(models.Model):
@@ -96,7 +97,9 @@ class Atividade(models.Model):
         return self.nome
 
 
-class Voluntario(models.Model):
+class Voluntario(AbstractUser):
+    pass
+
     GENEROS = (
         ('M', 'Masculino'),
         ('F', 'Feminino'),
@@ -147,26 +150,6 @@ class Voluntario(models.Model):
         ('PG', 'Pós-Graduação'),
     )
 
-    nome = models.CharField(
-        max_length=255,
-        verbose_name='Nome'
-    )
-
-    sobrenome = models.CharField(
-        max_length=255,
-        verbose_name='Sobrenome'
-    )
-
-    email = models.EmailField(
-        max_length=255,
-        verbose_name='E-mail'
-    )
-
-    senha = models.CharField(
-        max_length=15,
-        verbose_name='Senha'
-    )
-
     telefone = models.CharField(
         max_length=255,
         verbose_name='Telefone',
@@ -186,7 +169,9 @@ class Voluntario(models.Model):
     )
 
     data_nascimento = models.DateField(
-        verbose_name=' Data de Nascimento'
+        verbose_name=' Data de Nascimento',
+        blank=True,
+        null=True
     )
 
     endereco = models.CharField(
@@ -248,7 +233,7 @@ class Voluntario(models.Model):
     ativo = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.nome + ' ' + self.sobrenome
+        return self.username
 
 
 class Sugerido(models.Model):
