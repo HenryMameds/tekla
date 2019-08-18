@@ -4,11 +4,12 @@ body{
     grid-template-areas:'nav nav nav nav'
     'header header header header'
     'sec    sec    sec    sec'
-                    'section  section  section  section'
-                    'footer footer footer footer';
-grid-auto-rows: 20vh 45vh 45vh 45vh 45vh 20vh;
-grid-auto-columns: 25% 25% 25% 25%;     
-background-color: black;
+    'section  section  section  section'
+    'footer footer footer footer';
+    grid-auto-rows: 20vh 45vh 45vh 45vh 45vh 20vh;
+    grid-auto-columns: 25% 25% 25% 25%;     
+    /* flex-flow: column; */
+    background-color: black;
 
 }
 
@@ -59,6 +60,7 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .senhora{
@@ -77,28 +79,23 @@ header{
 main{
     grid-area: sec;
     margin: 0;
-    background-color: #6DC9F7;
-}
-
-.toda_inf{
-    align-items: flex-end;
+    background-color: #f7fafc;
+    color: #3a6da5;
 }
 
 .queremos1{
     display: flex;
-    justify-items: center
+    text-align: center;
 }
 
 .queremos{
-    width: 90%;
-    height: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
 }
 
 .saiba_como{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +103,9 @@ main{
 
 .imagem{
     width: 50%;
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     justify-self: center;
     width:200px;
     height:200px;
@@ -133,32 +132,74 @@ main{
 
 h2{
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 25px;    
+    text-align: center;
 }
 
 h3{
-    display: flex;
-    justify-content: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-
+    text-align: center;
 }
 
 p{
     display: flex;
     justify-content: center;
     font-family: 'Heebo', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.text_grande{
+    color:#3a6da5;
+    font-size: 30px;
+    text-align: center;
+
 }
 
 .linha{
     color:gray;
 }
 
-
 section{
     grid-area: section;
-    background-color: salmon;
+    background-color: #d3e9f4;
+}
+
+.voluntario1{
+   margin: 0%;
+}
+
+.voluntario2{
+    text-align: center;
+}
+
+.voluntario3{
+    color:#3a6da5;
+    display: flex;
+    justify-content: space-between;
+
+}
+.text_volun{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    margin: 0%;
+
+}
+
+.button_volun{
+    align-items: center;
+    margin: 0;
+}
+
+.seja_voluntario{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    margin: 0%;
 }
 
 footer{
