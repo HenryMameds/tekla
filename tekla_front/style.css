@@ -169,6 +169,7 @@ section{
 .Voluntario{
   margin-top: 0px;
   padding-top: 20px;
+  color: #3a6da5;
 }
 
 .voluntario1{
@@ -180,9 +181,11 @@ section{
 }
 
 .voluntario3{
+    align-items: center;
     color:#3a6da5;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 
 }
 .text_volun{
@@ -244,26 +247,43 @@ section{
     width: 60%;
 }
 
-footer{
+.ft{
     background-color: #3a6da5;
-    grid-area: footer;
+    width: 100%;
+    display: flex;
 }
 .footer1{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     width: 50%;
-
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer2{
     color: #f7fafc;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
 }
 
-.footer3{
-    color:#f7fafc;
-}
  .sociais{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
  }
+
+.footer3{
+    color: #f7fafc;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+}
