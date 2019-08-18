@@ -31,7 +31,7 @@ nav{
 .menu2{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: palevioletred; 
+    color: #3a6da5; 
 }
 .loguinho{
     width: 80%;
@@ -190,7 +190,11 @@ section{
 
 .button_volun{
     align-items: center;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50%;
+    width: 50%;
+    align-content: center;
 }
 
 .seja_voluntario{
@@ -203,7 +207,25 @@ section{
 }
 
 footer{
+    background-color: #3a6da5;
     grid-area: footer;
-    background-color: blue;
+}
+.footer1{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    width: 50%;
+    
 }
 
+.footer2{
+    color: #f7fafc;
+}
+
+.footer3{
+    color:#f7fafc;
+}
+ .sociais{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    width: 50%;
+ }
