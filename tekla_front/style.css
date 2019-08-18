@@ -7,7 +7,7 @@ body{
     'section  section  section  section'
     'footer footer footer footer';
     grid-auto-rows: 20vh 45vh 45vh 45vh 45vh 20vh;
-    grid-auto-columns: 25% 25% 25% 25%;     
+    grid-auto-columns: 25% 25% 25% 25%;
     /* flex-flow: column; */
     background-color: black;
 
@@ -31,7 +31,7 @@ nav{
 .menu2{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    color: #3a6da5; 
+    color: #3a6da5;
 }
 .loguinho{
     width: 80%;
@@ -41,7 +41,7 @@ nav{
 
 .logo-pequeno{
     width: 150px;
-    height: 100px;   
+    height: 100px;
 }
 
 .img_logop{
@@ -64,12 +64,12 @@ header{
 }
 
 .senhora{
-    width: 50%; 
+    width: 50%;
 }
 
 .texto1{
     display: flex;
-    color: #3a6da5; 
+    color: #3a6da5;
     align-items:center;
     font-size:25px;
     font-family: 'Heebo', sans-serif;
@@ -132,7 +132,7 @@ main{
 
 h2{
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;    
+    font-size: 25px;
     text-align: center;
 }
 
@@ -164,6 +164,11 @@ section{
     background-color: #d3e9f4;
 }
 
+.Voluntario{
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
 .voluntario1{
    margin: 0%;
 }
@@ -192,18 +197,11 @@ section{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 50%;
     width: 50%;
-    align-content: center;
 }
 
 .seja_voluntario{
     width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-items: center;
-    margin: 0%;
 }
 
 footer{
@@ -214,7 +212,7 @@ footer{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     width: 50%;
-    
+
 }
 
 .footer2{

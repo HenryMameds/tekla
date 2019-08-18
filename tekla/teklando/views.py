@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db import connection
 from teklando.models import Voluntario
 from teklando.models import Sugerido
 
@@ -57,3 +58,7 @@ def login(request):
             contexto = {'voluntario': voluntario, 'sugeridos': sugeridos}
             return render(request, 'voluntario.html', contexto)
     return render(request, 'login.html')
+
+
+def lista_atividades(request):
+    return render(request, 'atividades.html')

@@ -1,0 +1,14 @@
+<p><h1>Tekla</h1>
+{% if voluntario is None %}
+    <h1>Ops, você precisa se cadastrar</h1>
+    <p>
+        <a href="/cadastro">clique aqui para se cadastrar</a>
+    </p>
+{% else %}
+<h1>Olár Voluntario</h1>
+
+<h2>{{voluntario}}</h2>
+
+
+<h1>Atividades Participadas</h1>
+{% endif %}</p>

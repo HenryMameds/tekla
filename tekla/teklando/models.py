@@ -87,18 +87,13 @@ class Atividade(models.Model):
 
     descricao = models.TextField()
 
-    escolas = models.ManyToManyField(Escola, through='Atividade_Escolas')
+    escolas = models.ManyToManyField(Escola)
 
     data_de_criacao = models.DateTimeField(auto_now_add=True)
     ativo = models.BooleanField(default=True)
 
     def __str__(self):
         return self.nome
-
-
-class Atividade_Escolas(models.Model):
-    atividade_id = models.ForeignKey(Atividade, on_delete=models.CASCADE)
-    escola_id = models.ForeignKey(Escola, on_delete=models.CASCADE)
 
 
 class Voluntario(models.Model):
@@ -246,7 +241,6 @@ class Voluntario(models.Model):
 
     atividades = models.ManyToManyField(
         Atividade,
-        through='Voluntario_Atividades',
         blank=True
     )
 
@@ -255,11 +249,6 @@ class Voluntario(models.Model):
 
     def __str__(self):
         return self.nome + ' ' + self.sobrenome
-
-
-class Voluntario_Atividades(models.Model):
-    voluntario_id = models.ForeignKey(Voluntario, on_delete=models.CASCADE)
-    atividade_id = models.ForeignKey(Atividade, on_delete=models.CASCADE)
 
 
 class Sugerido(models.Model):

@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'tekla.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'template1',
-        'USER': 'postgres',
-        'PASSWORD': '2945m@n$68#',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tekla',
+        'USER': 'root',
+        'PASSWORD': 'HAM@2019xiaomi',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 
