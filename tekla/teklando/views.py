@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from teklando.models import Voluntario
+from teklando.models import Sugerido
 
 # Create your views here.
 
@@ -52,7 +53,7 @@ def login(request):
             contexto = {'notfound': 'Cadastre-se para ser um voluntario'}
             return render(request, 'cadastro.html', contexto)
         else:
-            contexto = {'nome': voluntario}
+            sugeridos = Sugerido.objects.select_related('atividades', 'voluntarios').filter(voluntarios__in=Voluntario.objects.filter(email=email_form))
+            contexto = {'voluntario': voluntario, 'sugeridos': sugeridos}
             return render(request, 'voluntario.html', contexto)
-
     return render(request, 'login.html')
