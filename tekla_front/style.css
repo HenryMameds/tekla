@@ -70,6 +70,12 @@ p{
     color: palevioletred;
     
 }
+
+.imagem{
+    width:200px;
+    height:200px;
+
+}
 section{
     grid-area: section;
     background-color: salmon;
@@ -79,3 +85,4 @@ footer{
     grid-area: footer;
     background-color: blue;
 }
+
