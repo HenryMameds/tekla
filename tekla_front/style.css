@@ -1,9 +1,9 @@
 
 body{
-margin: 0;
-grid-template-areas:'nav nav nav nav'
-                    'header header header header'
-                    'sec    sec    sec    sec'
+    margin: 0;
+    grid-template-areas:'nav nav nav nav'
+    'header header header header'
+    'sec    sec    sec    sec'
                     'section  section  section  section'
                     'footer footer footer footer';
 grid-auto-rows: 20vh 45vh 45vh 45vh 45vh 20vh;
@@ -22,12 +22,16 @@ background-color: black;
 
 nav{
     grid-area: nav;
-    background-color: #6DC9F7;
+    background-color: #d3e9f4;
     display: flex;
     justify-content: center;
-    
 }
 
+.menu2{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: palevioletred; 
+}
 .loguinho{
     width: 80%;
     display: flex;
@@ -45,30 +49,106 @@ nav{
 
 header{
     grid-area: header;
-    background-color: #6DC9F7;
+    background-color: #d3e9f4;
+    position: relative;
+    text-align: center;
+    margin: 0;
 }
+
+.header2{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.senhora{
+    width: 50%; 
+}
+
+.texto1{
+    display: flex;
+    color: #3a6da5; 
+    align-items:center;
+    font-size:25px;
+    font-family: 'Heebo', sans-serif;
+    width: 50%;
+}
+
 main{
     grid-area: sec;
     margin: 0;
     background-color: #6DC9F7;
 }
 
-h1{
-    font-family: 'Raleway', sans-serif;
+.toda_inf{
+    align-items: flex-end;
 }
+
+.queremos1{
+    display: flex;
+    justify-items: center
+}
+
+.queremos{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.saiba_como{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    width: 50%;
+    display: flex;
+    justify-self: center;
+    width:200px;
+    height:200px;
+}
+.como{
+    width: 25%;
+    align-items: center;
+}
+
+.onde{
+    width: 25%;
+    align-items: center;
+}
+
+.quem{
+    width: 25%;
+    align-items: center;
+}
+
+.ensina{
+    width: 25%;
+    align-items: center;
+}
+
 h2{
     font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+
 }
 
 p{
+    display: flex;
+    justify-content: center;
     font-family: 'Heebo', sans-serif;
-}
-
-.menu2{
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    color: palevioletred;
-    
+    font-size: 15px;
 }
 
 .linha{
@@ -76,11 +156,6 @@ p{
 }
 
 
-.imagem{
-    width:200px;
-    height:200px;
-
-}
 section{
     grid-area: section;
     background-color: salmon;
