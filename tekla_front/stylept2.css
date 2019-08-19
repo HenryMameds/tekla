@@ -106,131 +106,150 @@
 
 .body-cadastro {
     margin: 0;
-    background-color: #f6fafb;
+    background-color: #f7fafc;
+}
+
+.logo-cadastro {
+    width: 150px;
+    height: 85px;
+}
+
+.circulo-logo-cadastro {
+    background: #6dc9f7;
+    border-radius: 78px;
+    height: 150px;
+    width: 150px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
 }
 
 .nav-cadastro {
     display: flex;
     justify-content: center;
-    height: 80px;
-    align-items: center;
 }
 
-.logo-barra {
-    background-color: #6DC9F7;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
-    width: 1300px;
-}
-
-.logo-pequeno {
-    width: 150px;
-    height: 100px;
-}
-
-.texto-cadastro {
-    color: #0075b8;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.campo-cadastro {
-    background-color: #f6fafb;
-    border: 1px solid rgba(255, 255, 255, .1);
-    border-radius: 2px;
-    font-family: 'Raleway', sans-serif;
-    padding: 10px 10px;
-    padding-top: 1px;
-    margin-left: 12px;
-    width: 200px;
-    color: #036;
-    margin-top: 14px;
-}
-
-
-.campo-cadastro2 {
-    background-color: #f6fafb;
-    border: 1px solid rgba(255, 255, 255, .1);
-    border-radius: 2px;
-    font-family: 'Raleway', sans-serif;
-    padding: 10px 10px;
-    padding-top: 1px;
-    margin-left: 12px;
-    width: 200px;
-    color: #036;
-}
-
-.formulario-voluntario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.bloco-logo {
+    margin-top: 10px;
     width: 80%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
 }
 
-.fundo-azul {
-    background-color: #6DC9F7;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
-    width: 1300px;
-    height: 550px;
+.link-voltar {
     display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.link-pg-inicial {
+    text-decoration: none;
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-cadastro {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 500px;
 }
 
-.organizar {
-    flex-direction: column;
+.bloco-um {
+    width: 70%;
+    /* background-color: aqua; */
+    height: 500px;
     display: flex;
+    justify-content: space-between;
 }
 
-.botaoo {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: flex-end;
-    position: relative;
-    top: 20px;
-    right: 500px;
+.campo {
+    margin-top: 10px;
+    background-color: #f6fafb;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 12px;
+    width: 200px;
+    color: #036;
 }
 
-.formulario-cadastro {
-    display: flex;
-    width: 800px;
+.camp{
+    margin-top: 10px;
+    background-color: #f6fafb;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 12px;
+    color: #036;
+
 }
 
-.voluntario {
-    display: flex;
-    justify-content: flex-start;
-    width: 400px;
+.separador {
+    padding-top: 5px;
 }
 
-.logo-voluntario {
+.formulario-voluntario-cadastro {
+    margin-top: 30px;
     width: 350px;
-    height: 350px;
-    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.733))
-}
-
-.dados {
-    width: 400px;
-    height: 400px;
+    height: 1000px;
     display: flex;
+    background-color: #6dc9f7;
     flex-direction: column;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
     color: #036;
     font-family: 'Raleway', sans-serif;
+    
 }
 
-.espacador {
-    padding-top: 3px;
-    padding-bottom: 3px;
+.botao-login {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background: #0075b8;
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+    top: 15px;
+    width: 250px;
 }
+
+.textos {
+    /* background-color: gold; */
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-cadaste-se {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #3a6db7;
+}
+
+.texto-pg-cadastro {
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-cadastro {
+    background-color: #3a6da5;
+    height: 600px;
+}
+
+
 
 
 /* Estilização Voluntario */
