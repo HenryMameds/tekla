@@ -60,6 +60,7 @@ header{
 
 .header2{
     width: 80%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,15 +131,17 @@ main{
 .ensina{
     width: 25%;
     align-items: center;
-}
+
+
 
 h2{
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    text-align: center;
+    font-size:25px;
+    text-align:cnter;
 }
 
 h3{
+    font-weight: 900;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -154,7 +157,7 @@ p{
 .text_grande{
     color:#3a6da5;
     font-size: 25px;
-        font-weight: 700;
+    font-weight: 700;
     text-align: center;
 
 }
