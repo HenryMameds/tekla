@@ -22,22 +22,22 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height:500px;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .logo-login {
-    width: 150px;
-    height: 85px;
+    width: 140px;
+    height: 75px;
 }
 
 .circulo-logo {
     background: #6DC9F7;
     border-radius: 78px;
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     display: flex;
     align-items: center;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
@@ -51,8 +51,8 @@
     padding: 0px 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    margin-left: 12px;
-    width: 150px;
+    margin-left: 10px;
+    width: 120px;
     color: #036;
 }
 
@@ -65,10 +65,10 @@
     border: none;
     background: #0075b8;
     cursor: pointer;
-    padding: 15px;
+    padding: 13px;
     position: relative;
     top: 20px;
-    width: 250px;
+    width: 200px;
 }
 
 .botao-login:hover {

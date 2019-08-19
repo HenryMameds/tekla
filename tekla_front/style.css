@@ -400,14 +400,7 @@ section{
 .rede-social-circulo:hover{
     background-color: #27486b;
 }
-.span{
-    display: flex;
-    justify-content: center;
-    background-color: #3a6da5;
-    width: 100%;
-    color: #f7fafc;
-    text-decoration: none;
-}
+
 .imagem {
 	overflow: hidden;
 }
