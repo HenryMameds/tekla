@@ -34,7 +34,22 @@ nav{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: #3a6da5;
+    font-weight: 600;
 }
+.menu2:hover{
+    background-color: #3a6da5;
+    color: #f7fafc;
+    border-radius: 12px;
+    height: 25px;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
 .loguinho{
     width: 80%;
     display: flex;
@@ -56,18 +71,29 @@ header{
     position: relative;
     text-align: center;
     margin: 0;
+    height: 240px;
 }
-
+.imagem-header{
+    width: 50%;
+    display: block;
+    justify-self: center;
+    width:250px;
+    height:250px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.733));
+}
 .header2{
-    width: 80%;
-    height: 80%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .senhora{
-    width: 50%;
+    width: 40%;
+    display: flex;
+    justify-content:  flex-end;
+    /* background-color: brown; */
+    padding-right: 50px;
 }
 
 .texto1{
@@ -76,7 +102,9 @@ header{
     align-items:center;
     font-size:25px;
     font-family: 'Heebo', sans-serif;
-    width: 50%;
+    width: 60%;
+    padding-left: 60px;
+    /* background-color: coral; */
 }
 
 main{
@@ -109,50 +137,48 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 60%;
 }
 
 .imagem{
     width: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     justify-self: center;
-    width:200px;
-    height:200px;
+    width:130px;
+    height:130px;
+    position: relative; left: 110px;
 }
 .como{
     width: 25%;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 50px 0px 50px;
 }
 
 .onde{
     width: 25%;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 50px 0px 50px;
 }
 
 .quem{
     width: 25%;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 50px 0px 50px;
 }
 
 .ensina{
     width: 25%;
     align-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 50px 0px 50px;
 }
 
 h2{
     font-family: 'Raleway', sans-serif;
-    font-size:25px;
-    text-align:center;
+    font-size: 25px;
+    text-align: center;
 }
 
 h3{
-    font-weight: 900;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -170,11 +196,30 @@ p{
     font-size: 25px;
     font-weight: 700;
     text-align: center;
+    width: 70%;
 
 }
 
+.titulo-em-cima-da-linha{
+    margin: 30px 0px 0px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
 .linha{
     color:gray;
+    margin: 0;
+    font-weight: 500;
+}
+
+.texto-linha{
+    margin: 0px 0px 80px 0px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+
 }
 
 section{
@@ -242,7 +287,7 @@ section{
     color: #d3e9f4;
 }
 
-.btn_azul:active{
+.btn_azul,.menu2:active{
     border: none;
     box-shadow: none;   
     position:relative;
@@ -306,6 +351,7 @@ section{
     font-size: 16px;
 }
 
-.saiba-titulo{
+.saiba_titulo{
+    font-size: 22px;
     width: 330px;
 }
