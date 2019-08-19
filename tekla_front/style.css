@@ -97,10 +97,18 @@ main{
     justify-self: center;
 }
 
+.toda_inf{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .saiba_como{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
 }
 
 .imagem{
@@ -115,21 +123,25 @@ main{
 .como{
     width: 25%;
     align-items: center;
+    padding: 0px 40px 0px 40px;
 }
 
 .onde{
     width: 25%;
     align-items: center;
+    padding: 0px 40px 0px 40px;
 }
 
 .quem{
     width: 25%;
     align-items: center;
+    padding: 0px 40px 0px 40px;
 }
 
 .ensina{
     width: 25%;
     align-items: center;
+    padding: 0px 40px 0px 40px;
 }
 
 h2{
@@ -285,4 +297,13 @@ section{
     margin-right: auto;
     flex-direction: column;
     align-items: center;
+}
+.saiba_texto{
+    width: 330px;
+    height: 150px;
+    font-size: 16px;
+}
+
+.saiba-titulo{
+    width: 330px;
 }
