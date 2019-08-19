@@ -28,57 +28,59 @@
         <form class="formulario-cadastro" action="/cadastro" method="post">
           <!-- {% csrf_token %} -->
           <div class="dados">
-            <label class="espacador">Nome</label>
-            <input class="campo-cadastro" type="text" name="nome" required>
+            <!-- <label class="espacador">Nome</label> -->
+            <input class="campo-cadastro" type="text" name="nome" required placeholder="Nome">
 
-            <label class="espacador">Sobrenome</label>
-            <input class="campo-cadastro" type="text" name="sobrenome" required>
+            <!-- <label class="espacador">Sobrenome</label> -->
+            <input class="campo-cadastro" type="text" name="sobrenome" required placeholder="Sobrenome">
 
-            <label class="espacador">E-mail</label>
-            <input class="campo-cadastro" type="email" name="email" required>
+            <!-- <label class="espacador">E-mail</label> -->
+            <input class="campo-cadastro" type="email" name="email" required placeholder="E-mail">
 
-            <label class="espacador">Senha</label>
-            <input class="campo-cadastro" type="password" name="senha">
+            <!-- <label class="espacador">Senha</label> -->
+            <input class="campo-cadastro" type="password" name="senha" placeholder="Senha">
 
-            <label class="espacador">Telefone</label>
-            <input class="campo-cadastro" type="text" name="telefone" required>
+            <!-- <label class="espacador">Telefone</label> -->
+            <input class="campo-cadastro" type="text" name="telefone" required placeholder="Telefone">
 
-            <label class="espacador">Celular</label>
-            <input class="campo-cadastro" type="text" name="celular" required>
+            <!-- <label class="espacador">Celular</label> -->
+            <input class="campo-cadastro" type="text" name="celular" required placeholder="Celular">
+
+            <label class="espacador">Data de Nascimento</label>
+            <input class="campo-cadastro2" type="date" name="data_nascimento" required>
 
             <label class="espacador" for="">Gênero</label>
-            <select class="campo-cadastro" name="genero" required>
+            <select class="campo-cadastro2" name="genero" required>
               <option value="F">Feminino</option>
               <option value="M">Masculino</option>
               <option value="O">Outro</option>
             </select>
 
-            <label class="espacador">Data de Nascimento</label>
-            <input class="campo-cadastro" type="date" name="data_nascimento" required>
+            
           </div>
 
           <div class="dados">
 
-            <label class="espacador">Endereço</label>
-            <input class="campo-cadastro" type="text" name="endereco" required>
+            <!-- <label class="espacador">Endereço</label> -->
+            <input class="campo-cadastro" type="text" name="endereco" required placeholder="Endereço">
 
-            <label class="espacador">Numero</label>
-            <input class="campo-cadastro" type="text" name="numero" required>
+            <!-- <label class="espacador">Numero</label> -->
+            <input class="campo-cadastro" type="text" name="numero" required placeholder="Numero">
 
-            <label class="espacador">Complemento</label>
-            <input class="campo-cadastro" type="text" name="complemento" required>
+            <!-- <label class="espacador">Complemento</label> -->
+            <input class="campo-cadastro" type="text" name="complemento" required placeholder="Complemento">
 
-            <label class="espacador">CEP</label>
-            <input class="campo-cadastro" type="text" name="cep" required>
+            <!-- <label class="espacador">CEP</label> -->
+            <input class="campo-cadastro" type="text" name="cep" required placeholder="CEP">
 
-            <label class="espacador">Bairro</label>
-            <input class="campo-cadastro" type="text" name="bairro" required>
+            <!-- <label class="espacador">Bairro</label> -->
+            <input class="campo-cadastro" type="text" name="bairro" required placeholder="Bairro">
 
-            <label class="espacador">Cidade</label>
-            <input class="campo-cadastro" type="text" name="cidade" required>
+            <!-- <label class="espacador">Cidade</label> -->
+            <input class="campo-cadastro" type="text" name="cidade" required placeholder="Cidade">
 
             <label class="espacador">Estado</label>
-            <select class="campo-cadastro" name="estado" required>
+            <select class="campo-cadastro2" name="estado" required>
               <option value="AC">Acre</option>
               <option value="AL">Alagoas</option>
               <option value="AP">Amapá</option>
@@ -112,7 +114,7 @@
           <div class="dados">
 
             <label class="espacador">Disponibilidade</label>
-            <select class="campo-cadastro" name="disponibilidade" required>
+            <select class="campo-cadastro2" name="disponibilidade" required>
               <option value="ST">Sábado Tarde</option>
               <option value="SM">Sábado Manhã</option>
               <option value="DT">Domingo Tarde</option>
@@ -120,14 +122,15 @@
             </select>
 
             <label class="espacador">Escolaridade</label>
-            <select class="campo-cadastro" name="escolaridade">
+            <select class="campo-cadastro2" name="escolaridade">
+              <option value="M">Médio</option>
               <option value="T">Técnico</option>
               <option value="G">Graduação</option>
               <option value="PG">Pós-Graduação</option>
             </select>
 
             <label class="espacador">Por que ser um Voluntario?</label>
-            <textarea class="campo-cadastro" name="objetivo" cols="30" rows="10"></textarea>
+            <textarea class="campo-cadastro2" name="objetivo" cols="30" rows="10"></textarea>
           </div>
 
           <div class="botaoo">

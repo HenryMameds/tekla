@@ -140,7 +140,21 @@
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 2px;
     font-family: 'Raleway', sans-serif;
-    padding: 0px 10px;
+    padding: 10px 10px;
+    padding-top: 1px;
+    margin-left: 12px;
+    width: 200px;
+    color: #036;
+    margin-top: 14px;
+}
+
+
+.campo-cadastro2 {
+    background-color: #f6fafb;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 10px;
     padding-top: 1px;
     margin-left: 12px;
     width: 200px;
@@ -209,8 +223,8 @@
 }
 
 .espacador {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 
