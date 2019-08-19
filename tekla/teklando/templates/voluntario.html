@@ -1,7 +1,7 @@
 <h1>Tekla</h1>
 {% if user.is_authenticated %}
 <h1>Olár Voluntario</h1>
-<p>{{ user.username }}
+<p>{{ user.username }}</p>
 
   <h1>Atividades Sugeridas</h1>
   <p>
@@ -9,11 +9,14 @@
                   <p>{{sugerido.atividades.nome}}</p>
                   <p>{{sugerido.atividades.horario}}</p>
                   <p>{{sugerido.atividades.descricao}}</p>
-                  <a href=""><input type="button" value="Cadastre-se"></a>
+                  <a href="/cadastrar_atividade/{{sugerido.atividades.id}}"><input type="button" value="Cadastrar"></a>
                   <hr>
           {% endfor %}
   </p>
 
+
+
+      <p><a href="{% url 'atividades' %}">Atividades Cadastradas</a></p>
 
 <p><a href="{% url 'logout' %}">Log out</a></p>
 {% else %}

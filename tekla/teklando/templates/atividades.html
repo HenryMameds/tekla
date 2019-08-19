@@ -1,14 +1,24 @@
 <p><h1>Tekla</h1>
-{% if voluntario is None %}
-    <h1>Ops, você precisa se cadastrar</h1>
-    <p>
-        <a href="/cadastro">clique aqui para se cadastrar</a>
-    </p>
-{% else %}
+{% if user.is_authenticated %}
 <h1>Olár Voluntario</h1>
 
-<h2>{{voluntario}}</h2>
-
+<p>{{ user.username }}</p>
 
 <h1>Atividades Participadas</h1>
+<p>{{ msg }}</p>
+{{ nome_atividade }}
+{{ horario_atividade }}
+{{ descricao_atividade }}
+{{ nome_escola }}
+
+
+<p><a href="{% url 'voluntario' %}">Home</a></p>
+<p><a href="{% url 'logout' %}">Log out</a></p>
+
+{% else %}
+<h1>Ops, você precisa se cadastrar</h1>
+<p>
+    <a href="/cadastro">clique aqui para se cadastrar</a>
+</p>
+
 {% endif %}</p>
