@@ -28,12 +28,12 @@
     align-items: center;
 }
 
-.logo-login {
+.logo-login1 {
     width: 140px;
     height: 75px;
 }
 
-.circulo-logo {
+.circulo-logo1 {
     background: #6DC9F7;
     border-radius: 78px;
     height: 140px;
@@ -75,24 +75,23 @@
     background: #038ad8;
 }
 
-.separador {
+.separador1 {
     padding-top: 50px;
 }
 
-.email,
-.senha {
+.email,.senha {
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
 
-.bloco-um {
+.bloco-um1 {
     width: 70%;
     justify-content: center;
     display: flex;
 }
 
-.bloco-dois {
+.bloco-dois2 {
     width: 70%;
     height: 270px;
     display: flex;
@@ -293,6 +292,7 @@
 }
 
 /* Estilização da Pagina de atividades */
+
 .body-atividades {
     margin: 0;
     background-color: #d3e9f4;
@@ -325,7 +325,7 @@
 }
 
 .bloco2 {
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 10px;
     width: 80%;
     display: flex;
@@ -349,7 +349,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 80px;
     width: 100%;
     height: 100%;
 }
