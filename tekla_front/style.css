@@ -335,8 +335,11 @@ section{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     width: 50%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+
    
 }
 
@@ -355,10 +358,16 @@ section{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     width: 50%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    /* background-color: cadetblue; */
     
+ }
+ .centro{
+     /* background-color: brown; */
+     width: 80%;
  }
 
 .saiba_texto{
@@ -376,6 +385,7 @@ section{
     display: flex;
     justify-content: flex-start;
     padding-top: 15px;
+    align-items: center;
     
 }
 
