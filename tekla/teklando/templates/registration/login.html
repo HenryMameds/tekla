@@ -22,18 +22,24 @@
 
             <div class="bloco-dois2">
                 <div class="email">
-                    <img src={% static 'img/login.png' %} alt="">
-                    <label class="campo-login">{{ form.username }}</label>
+                    <img class ="img-login" src={% static 'img/login.png' %} alt="">
+                    <div class="camp-log">
+                    <label class="separador-login">Nome de Usuário</label>
+                    {{ form.username }}
+                </div>
                 </div>
 
-                <label class="separador1"></label>
+                <label class="separador-btn-login"></label>
 
                 <div class="senha">
-                    <img src={% static 'img/password.png' %} alt="">
-                    <label class="campo-login">{{ form.password }}</label>
+                    <img class ="img-login"src={% static 'img/password.png' %} alt="">
+                    <div class="camp-log">
+                    <label class="separador-login">Senha</label>
+                    {{ form.password }}
+                </div>
                 </div>
 
-                <label class="separador"></label>
+                <label class="separador-btn-login"></label>
                 <input class="botao-login" type="submit" value="Entrar">
             </div>
         </form>

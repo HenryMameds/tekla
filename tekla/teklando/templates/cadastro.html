@@ -24,7 +24,7 @@
             </div>
 
             <div class="link-voltar">
-                <a class="link-pg-inicial" href="/index">Voltar para a pagina inicial</a>
+                <a class="link-pg-inicial" href="{% url 'index' %}">Voltar para a pagina inicial</a>
             </div>
         </div>
     </nav>
@@ -33,110 +33,48 @@
         <div class="bloco-um">
             <div class="textos">
                 <h1 class="texto-cadaste-se">Cadastre-se</h1>
-                <p class="texto-pg-cadastro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nulla veritatis, minus aliquid
-                    neque ducimus voluptas! Aut ea, ut dolores veritatis et maxime eum delectus obcaecati? Corrupti
-                    neque voluptatem quod.</p>
+                <p class="texto-pg-cadastro">Fazer o bem, que mal tem? Ser um voluntário envolve desempenhar atividades que vão impactar a vida de muitas pessoas que você talvez sequer conheça. Entre fazer nada e ser indiferente ou ter a possibilidade de fazer o mundo um lugar melhor, o que você escolhe?</p>
             </div>
 
 
             <form class="formulario-voluntario-cadastro" method="post">
                   {% csrf_token %}
 
-                <label class="campo">{{ form.username }}</label>
-                <label class="campo">{{ form.email }}</label>
-                <label class="campo">{{ form.telefone }}</label>
-                <label class="campo">{{ form.celular }}</label>
-                <!-- <input class="campo" type="text" name="nome" required placeholder="Nome">
-                <input class="campo" type="email" name="email" required placeholder="E-mail">
-                <input class="campo" type="text" name="telefone" required placeholder="Telefone">
-                <input class="campo" type="text" name="celular" required placeholder="Celular"> -->
-
+                <label class="separador" for="">Nome de Usuario</label>
+                {{ form.username }}
+                <label class="separador" for="">E-mail</label>
+                {{ form.email }}
+                <label class="separador" for="">Telefone</label>
+                {{ form.telefone }}
+                <label class="separador" for="">Celular</label>
+                {{ form.celular }}
                 <label class="separador" for="">Gênero</label>
                 {{ form.genero }}
-                <!-- <select class="campo" name="genero" required>
-                    <option value="F">Feminino</option>
-                    <option value="M">Masculino</option>
-                    <option value="O">Outro</option>
-                </select> -->
-
                 <label class="separador">Data de Nascimento</label>
                 {{ form.data_nascimento }}
-                <!-- <input class="campo" class="campo" type="date" name="data_nascimento" required> -->
-
-
-                <!-- <input class="campo" type="text" name="endereco" required placeholder="Endereço"> -->
+                <label class="separador">Endereço</label>
                 {{ form.endereco }}
-
-                <!-- <input class="campo" type="text" name="numero" required placeholder="Numero"> -->
+                <label class="separador">Numero</label>
                 {{ form.numero }}
-
-                <!-- <input class="campo" type="text" name="complemento" required placeholder="Complemento"> -->
+                <label class="separador">Complemento</label>
                 {{ form.complemento }}
-
-                <!-- <input class="campo" type="text" name="cep" required placeholder="CEP"> -->
+                <label class="separador">CEP</label>
                 {{ form.cep }}
-
-                <!-- <input class="campo" type="text" name="bairro" required placeholder="Bairro"> -->
+                <label class="separador">Bairro</label>
                 {{ form.bairro }}
-
-                <!-- <input class="campo" type="text" name="cidade" required placeholder="Cidade"> -->
+                <label class="separador">Cidade</label>
                 {{ form.cidade }}
                 <label class="separador">Estado</label>
                 {{ form.estado }}
-                <!-- <select class="campo" name="estado" required>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Geais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="PR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select> -->
-
                 <label class="separador">Disponibilidade</label>
                 {{ form.disponibilidade }}
-                <!-- <select class="campo" name="disponibilidade" required>
-                    <option value="ST">Sábado Tarde</option>
-                    <option value="SM">Sábado Manhã</option>
-                    <option value="DT">Domingo Tarde</option>
-                    <option value="DM">Domingo Manhã</option>
-                </select> -->
-
                 <label class="separador">Escolaridade</label>
                 {{ form.escolaridade }}
-                <!-- <select class="campo" name="escolaridade">
-                    <option value="T">Técnico</option>
-                    <option value="G">Graduação</option>
-                    <option value="PG">Pós-Graduação</option>
-                </select> -->
-
                 <label class="separador">Por que ser voluntário?</label>
                 {{ form.objetivo }}
-                <!-- <textarea class="camp" name="objetivo" cols="30" rows="10">
-                </textarea> -->
-
-                <!-- <input class="campo" type="password" name="senha" placeholder="Senha"> -->
+                <label class="separador" for="">Digite sua senha</label>
                 {{ form.password1 }}
+                <label class="separador" for="">Confirme sua senha</label>
                 {{ form.password2 }}
 
                 <input class="botao-login" type="submit" value="Cadastrar">

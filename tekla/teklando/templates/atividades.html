@@ -20,8 +20,9 @@
                     </div>
 
                     <div class="link-voltar">
-                        <a class="link-pg-inicial" href="{% url 'logout' %}">Sair</a>
                         <a class="link-pg-inicial" href="{% url 'voluntario' %}">Voltar</a>
+                        <a class="link-pg-inicial" href="#">|</a>
+                        <a class="link-pg-inicial" href="{% url 'logout' %}">Sair</a>
                     </div>
                 </div>
             </nav>
@@ -50,8 +51,8 @@
 
     </section>
 {% else %}
-<p><a href="{% url 'cadastro' %}">Sign Up</a></p>
-<p><a href="{% url 'login' %}">Log In </a></p>
+<p><a id="botao-voluntario122"href="{% url 'cadastro' %}">Sign Up</a></p>
+<p><a class="botao-voluntario"href="{% url 'login' %}">Log In </a></p>
 {% endif %}
 </body>
 
