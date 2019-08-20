@@ -1,0 +1,436 @@
+/* Estilização da Pagaina de Login */
+
+.body-login {
+    margin: 0;
+    background-color: #6DC9F7;
+}
+
+.section-login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.texto-login {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.formulario-login {
+    background-color: #f6fafb;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height:500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-login1 {
+    width: 140px;
+    height: 75px;
+}
+
+.circulo-logo1 {
+    background: #6DC9F7;
+    border-radius: 78px;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+.campo-login {
+    background-color: #c3c8c88f;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    width: 120px;
+    color: #036;
+}
+
+.botao-login {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background: #0075b8;
+    cursor: pointer;
+    padding: 13px;
+    position: relative;
+    top: 20px;
+    width: 200px;
+}
+
+.botao-login:hover {
+    background: #038ad8;
+}
+
+.separador1 {
+    padding-top: 50px;
+}
+
+.email,.senha {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.bloco-um1 {
+    width: 70%;
+    justify-content: center;
+    display: flex;
+}
+
+.bloco-dois2 {
+    width: 70%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilização da Pagina de cadastro */
+
+.body-cadastro {
+    margin: 0;
+    background-color: #f7fafc;
+}
+
+.logo-cadastro {
+    width: 150px;
+    height: 85px;
+}
+
+.circulo-logo-cadastro {
+    background: #6dc9f7;
+    border-radius: 78px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+.nav-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-logo {
+    margin-top: 10px;
+    width: 80%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-voltar {
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.link-pg-inicial {
+    text-decoration: none;
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-cadastro {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.bloco-um {
+    width: 70%;
+    /* background-color: aqua; */
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo {
+    margin-top: 10px;
+    background-color: #f6fafb;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 12px;
+    width: 200px;
+    color: #036;
+}
+
+.camp{
+    margin-top: 10px;
+    background-color: #f6fafb;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 12px;
+    color: #036;
+
+}
+
+.separador {
+    padding-top: 5px;
+}
+
+.formulario-voluntario-cadastro {
+    margin-top: 30px;
+    width: 350px;
+    height: 1000px;
+    display: flex;
+    background-color: #6dc9f7;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.botao-login {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background: #0075b8;
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+    top: 15px;
+    width: 250px;
+}
+
+.textos {
+    /* background-color: gold; */
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-cadaste-se {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #3a6db7;
+}
+
+.texto-pg-cadastro {
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-cadastro {
+    background-color: #3a6da5;
+    height: 600px;
+}
+
+
+
+
+/* Estilização Voluntario */
+
+.section-voluntario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.tabela {
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+    border: 2px solid #555;
+    display: flex;
+    width: 900px;
+    justify-content: space-evenly;
+}
+
+.coluna {
+    width: 25%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    border-left: 1px solid #555;
+    border-right: 1px solid #555;
+}
+
+.titulo-coluna {
+    border-bottom: 2px solid #555;
+    text-align: center;
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+}
+
+.conteudo-coluna {
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+}
+
+/* Estilização da Pagina de atividades */
+
+.body-atividades {
+    margin: 0;
+    background-color: #d3e9f4;
+}
+
+.logo-login {
+    width: 130px;
+    height: 65px;
+}
+
+.circulo-logo {
+    background: #6dc9f7;
+    border-radius: 78px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+.circulo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.bloco2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-voltar {
+    display: flex;
+    align-items: center;
+    width: 18%;
+}
+
+.link-pg-inicial {
+    text-decoration: none;
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-atividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.quadrado-branco{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6fafb;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+.bloco{
+    width: 80%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.ola-voluntario{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ola{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #0075b8;
+    margin-top: 0px;
+
+}
+
+.nome-voluntario{
+    font-family: 'Raleway', sans-serif;
+    color: #0075b8;
+    margin: 0;
+}
+
+.ativi{
+    display: flex;
+
+}
+.atividades-sugeridas{
+    display: flex;
+    height: 350px;
+    width: 70%;
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 20px;
+    border-right: #555 solid 1px;
+}
+
+.atividades-selecionadas{
+    display: flex;
+    height: 350px;
+    width: 70%;
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.bloco-atividades{
+    display: flex;
+    flex-direction: column;
+}
+
+.atividade{
+    font-family: 'Raleway', sans-serif;
+    color:#0075b8;
+}
+
+.descricao-atividade{
+    font-family: 'Raleway', sans-serif;
+
+}

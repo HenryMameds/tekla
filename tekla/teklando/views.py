@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
-from django.db import connection, transaction
+from django.db import connection
 
 from teklando.forms import CustomUserCreationForm
 from teklando.models import Voluntario
@@ -58,6 +58,7 @@ def VoluntarioPageView(request):
 
 def Cadastrar_Atividade(request, id):
     current_user = request.user
+    experience.valores = request.POST.get('valor')
     print(current_user.id)
     cursor = connection.cursor()
     cursor.execute('INSERT INTO teklando_voluntario_atividades(voluntario_id, atividade_id) VALUES(%s, %s)', [current_user.id, id])

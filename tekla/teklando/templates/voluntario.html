@@ -1,25 +1,60 @@
-<h1>Tekla</h1>
+{% load static %}
 {% if user.is_authenticated %}
-<h1>Olár Voluntario</h1>
-<p>{{ user.username }}</p>
+<html lang="en">
 
-  <h1>Atividades Sugeridas</h1>
-  <p>
-          {% for sugerido in sugeridos %}
-                  <p>{{sugerido.atividades.nome}}</p>
-                  <p>{{sugerido.atividades.horario}}</p>
-                  <p>{{sugerido.atividades.descricao}}</p>
-                  <a href="/cadastrar_atividade/{{sugerido.atividades.id}}"><input type="button" value="Cadastrar"></a>
-                  <hr>
-          {% endfor %}
-  </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts.js"></script>
+    <link rel="icon" href="img/icon-title.png" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/stylept2.css' %}">
+    <title>Atividades</title>
+</head>
 
+<body class="body-atividades">
+        <nav class="nav-cadastro">
+                <div class="bloco2">
+                    <div class="circulo">
+                        <div class="circulo-logo"><img class="logo-login" src={% static 'img/logo-branco.png' %} alt=""></div>
+                    </div>
 
+                    <div class="link-voltar">
+                        <a class="link-pg-inicial" href="{% url 'logout' %}">Sair</a>
+                        <p><a class="link-pg-inicial" href="{% url 'atividades' %}">Atividades Cadastradas</a></p>
+                    </div>
+                </div>
+            </nav>
 
-      <p><a href="{% url 'atividades' %}">Atividades Cadastradas</a></p>
+    <section class="section-atividades">
+        <div class="quadrado-branco">
+            <div class="bloco">
+                <div class="ola-voluntario">
+                    <h1 class="ola">Olá {{ user.username }}</h1>
 
-<p><a href="{% url 'logout' %}">Log out</a></p>
+                </div>
+            </div>
+            <div class="ativi">
+
+                <div class="atividades-sugeridas">
+                  {% for sugerido in sugeridos %}
+                    <div class="bloco-atividades">
+                    <h2 class="atividade">Atividades Sugeridas</h2>
+                    <p class="descricao-atividade">{{sugerido.atividades.nome}}</p>
+                    <p class="descricao-atividade">{{sugerido.atividades.horario}}</p>
+                    <p class="descricao-atividade">{{sugerido.atividades.descricao}}</p>
+                </div>
+                    <a href="/cadastrar_atividade/{{sugerido.atividades.id}}"><input class="botao-login" type="button" value="Selecionar"></a>
+                </div>
+                  {% endfor %}
+            </div>
+        </div>
+
+    </section>
 {% else %}
 <p><a href="{% url 'cadastro' %}">Sign Up</a></p>
 <p><a href="{% url 'login' %}">Log In </a></p>
 {% endif %}
+</body>
+
+</html>

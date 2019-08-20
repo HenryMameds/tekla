@@ -1,12 +1,154 @@
-<!DOCTYPE html>
-<html lang="pt" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-      <h1>Olá Mundo</h1>
-      <p><a href="{% url 'cadastro' %}">Casdastre-se</a></p>
-      <p><a href="{% url 'login' %}">Login</a></p>
-  </body>
+{% load static %}
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Heebo|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="img/icon-title.png" type="image/x-icon" />
+    <title>Tekla</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="loguinho">
+            <div class="img_logop">
+                <img class="logo-pequeno" src="{% static 'img/logo-branco.png' %}" alt="logo">
+            </div>
+            <div class="menu">
+                <a class="menu2" href="#">Sobre</a>
+                <a class="menu2" href="#">Objetivo</a>
+                <a class="menu2" href="#">Contato</a>
+                <a class="menu2" href="{% url 'cadastro' %}">Cadastre-se</a>
+                <a class="menu2" href="{% url 'login' %}">Login</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header2">
+
+            <div class="senhora">
+                <img class="imagem-header" src={% static 'img/senhores.png' %} alt="Tekla">
+            </div>
+            <div class="texto1">
+                <p class="text_grande">A Tekla é um projeto que irá inserir a tecnologia na rotina da 3º idade. Se você
+                    tem apartir de 60 anos, já pode participar!</p>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="informacoes">
+        <div class="toda_inf">
+
+            <div class="queremos1">
+                <div class="queremos">
+                    <h2 class="titulo-em-cima-da-linha">Entenda como funciona</h2>
+                    <p class="linha">______________</p>
+                    <p class="texto-linha">O objetivo do projeto é melhorar e facilitar a rotina dos alunos através da
+                        tecnologia.</p>
+                </div>
+            </div>
+
+            <div class="saiba_como">
+
+                <div class="como">
+                    <img class="imagem" src={% static 'img/como.png' %} alt="Como?">
+                    <h3 class="saiba_titulo">Como?</h3>
+                    <p class="saiba_texto">Através de aulas práticas e gratuitas para familiarizar os alunos com o
+                        computador, ferramentas e redes sociais. </p>
+                </div>
+
+                <div class="onde">
+                    <img class="imagem" src={% static 'img/onde.png' %} alt="Onde?">
+                    <h3 class="saiba_titulo">Onde?</h3>
+                    <p class="saiba_texto"> As aulas acontecerão dentro das escolas públicas selecionadas. As inscrições
+                        irão ocorrer no local da aula, gratuitamente.</p>
+                </div>
+
+                <div class="quem">
+                    <img class="imagem" src={% static 'img/quem_participa.png' %} alt="Quem Participa?">
+                    <h3 class="saiba_titulo">Quem Pode Participar?</h3>
+                    <p class="saiba_texto">O aluno(a) precisa ter aprtir de 60 anos.</p>
+                </div>
+
+                <div class="ensina">
+                    <img class="imagem" src={% static 'img/quem_professor.png' %} alt="Quem Ensina?">
+                    <h3 class="saiba_titulo">Quem Ensina?</h3>
+                    <p class="saiba_texto">Professores voluntários, com conhecimentos de informática e tecnologia.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <section>
+
+        <div class="voluntario1">
+
+            <div class="voluntario2">
+                <h2 class="Voluntario">Seja um voluntário Tekla!</h2>
+                <p class="linha">______________</p>
+            </div>
+
+            <div class="voluntario3">
+
+                <div class="text_volun">
+                    <p class="text_grande"> Você sabia que os idosos são os menos conectados que outras faixas etárias?
+                        Além disso, mexer na internet/computador, ajuda a estimular o cérebro. Você pode fazer parte
+                        desta mudança. Inscreva-se e venha ser nosso professor voluntário!</p>
+                </div>
+
+                <div class="seja voluntario">
+                    <button class="btn btn_azul">SEJA UM VOLUNTARIO</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="ft">
+
+            <div class="footer1">
+                <div class="centro">
+                <a class="footer2" href="#">Objetivo</a>
+                <a class="footer2" href="#">Seja Nosso Voluntário</a>
+                <a class="footer2" href="#">Cadastre-se</a>
+                <a class="footer2" href="#">Login</a>
+            </div>
+            </div>
+            <div class="sociais">
+                <div class="centro">
+                <a class="footer2" href="#">FAQ</a>
+                <a class="footer2" href="#">Politica de Seleção</a>
+                <a class="footer2" href="#">Escolas Parceiras</a>
+            </div>
+
+            </div>
+            <div class="icones-footer">
+
+                <div class="rede-social-circulo"><a href="https://www.instagram.com" target="_blank"><img
+                            class="rede-social-icone" src={% static 'img/instagram.png' %}></a></div>
+                <div class="rede-social-circulo"><a href="https://twitter.com" target="_blank"><img
+                            class="rede-social-icone" src={% static 'img/twitter.png' %}></a></div>
+                <div class="rede-social-circulo"><a href="https://www.facebook.com" target="_blank"><img
+                            class="rede-social-icone" src={% static 'img/facebook.png' %}></a></div>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+</body>
+
 </html>

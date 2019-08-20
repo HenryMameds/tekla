@@ -1,24 +1,58 @@
-<p><h1>Tekla</h1>
+{% load static %}
 {% if user.is_authenticated %}
-<h1>Olár Voluntario</h1>
+<html lang="en">
 
-<p>{{ user.username }}</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts.js"></script>
+    <link rel="icon" href="img/icon-title.png" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/stylept2.css' %}">
+    <title>Atividades</title>
+</head>
 
-<h1>Atividades Participadas</h1>
-<p>{{ msg }}</p>
-{{ nome_atividade }}
-{{ horario_atividade }}
-{{ descricao_atividade }}
-{{ nome_escola }}
+<body class="body-atividades">
+        <nav class="nav-cadastro">
+                <div class="bloco2">
+                    <div class="circulo">
+                        <div class="circulo-logo"><img class="logo-login" src={% static 'img/logo-branco.png' %} alt=""></div>
+                    </div>
 
+                    <div class="link-voltar">
+                        <a class="link-pg-inicial" href="{% url 'logout' %}">Sair</a>
+                        <a class="link-pg-inicial" href="{% url 'voluntario' %}">Voltar</a>
+                    </div>
+                </div>
+            </nav>
 
-<p><a href="{% url 'voluntario' %}">Home</a></p>
-<p><a href="{% url 'logout' %}">Log out</a></p>
+    <section class="section-atividades">
+        <div class="quadrado-branco">
+            <div class="bloco">
+                <div class="ola-voluntario">
+                    <h1 class="ola">Olá {{ user.username }}</h1>
 
+                </div>
+            </div>
+            <div class="ativi">
+
+                <div class="atividades-sugeridas">
+                    <div class="bloco-atividades">
+                    <h2 class="atividade">Atividades Escolhidas</h2>
+                    <p class="descricao-atividade">{{ nome_atividade }}</p>
+                    <p class="descricao-atividade">{{ horario_atividade }}</p>
+                    <p class="descricao-atividade">{{ descricao_atividade }}</p>
+                    <p class="descricao-atividade">{{ nome_escola }}</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 {% else %}
-<h1>Ops, você precisa se cadastrar</h1>
-<p>
-    <a href="/cadastro">clique aqui para se cadastrar</a>
-</p>
+<p><a href="{% url 'cadastro' %}">Sign Up</a></p>
+<p><a href="{% url 'login' %}">Log In </a></p>
+{% endif %}
+</body>
 
-{% endif %}</p>
+</html>
