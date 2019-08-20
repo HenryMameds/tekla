@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -76,12 +77,12 @@ WSGI_APPLICATION = 'tekla.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tekla',
-        'USER': 'root',
-        'PASSWORD': 'HAM@2019xiaomi',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6um0vbho1muig',
+        'USER': 'cgadamdtuwgsux',
+        'PASSWORD': '95e3cbe0de93a0a55ba64a0097202051c43c32bd92bd111a2d063bfb59645fe0',
+        'HOST': 'ec2-54-225-113-7.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -128,3 +129,5 @@ AUTH_USER_MODEL = 'teklando.Voluntario'
 
 LOGIN_REDIRECT_URL = 'voluntario'
 LOGOUT_REDIRECT_URL = 'index'
+
+django_heroku.settings(locals())
