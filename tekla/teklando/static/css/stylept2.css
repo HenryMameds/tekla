@@ -324,6 +324,45 @@
     background-color: #d3e9f4;
     
 }
+
+.section-pagina-aviso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    /* background-color: #036; */
+    height: 300px;
+}
+.botao-aviso{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background: #0075b8;
+    cursor: pointer;
+    padding: 13px;
+    position: relative;
+    top: 20px;
+    width: 200px;
+}
+
+.aviso{
+    /* background-color: cadetblue; */
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.texto-aviso{
+    color: #036;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+
+}
 .botao-voluntario122{
     color: #036;
     text-align: center;

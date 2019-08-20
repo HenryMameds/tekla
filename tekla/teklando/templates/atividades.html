@@ -67,10 +67,16 @@
             </div>
         </div>
 </nav>
-<p><a id="botao-voluntario122"href="{% url 'cadastro' %}">Sign Up</a></p>
-<p><a class="botao-voluntario"href="{% url 'login' %}">Log In </a></p>
+<section class="section-pagina-aviso">
+    <div class="aviso">
+
+<h1 class="texto-aviso">Você precisa estar logado para visualizar as atividades!</h1>
+
+<p><a class="botao-aviso"href="{% url 'cadastro' %}">Cadastre-Se</a></p>
+<p><a class="botao-aviso"href="{% url 'login' %}">Entrar</a></p>
 </body>
 {% endif %}
-
+</div>
+</section>
 
 </html>

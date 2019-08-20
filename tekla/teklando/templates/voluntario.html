@@ -51,11 +51,35 @@
         </div>
 
     </section>
-{% else %}
-<div class="botao-voluntario1" >
-<p><a class="botao-voluntario" href="{% url 'cadastro' %}">Sign Up</a></p>
-<p><a class="botao-voluntario" href="{% url 'login' %}">Log In</a></p></div>
-{% endif %}
 </body>
+{% else %}
+<body class="body-atividades">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="icon" href="{% static 'img/icon-title.png' %}" type="image/x-icon" />
+                <link rel="stylesheet" href="{% static 'css/stylept2.css' %}">
+                <title>Atividades</title>
+            </head>
+            <nav class="nav-cadastro">
+                    <div class="bloco2">
+                        <div class="circulo">
+                            <div class="circulo-logo"><img class="logo-login" src={% static 'img/logo-branco.png' %} alt=""></div>
+                        </div>
+                    </div>
+            </nav>
+            <section class="section-pagina-aviso">
+                <div class="aviso">
+            
+            <h1 class="texto-aviso">Você precisa estar logado para visualizar as atividades!</h1>
+            
+            <p><a class="botao-aviso"href="{% url 'cadastro' %}">Cadastre-Se</a></p>
+            <p><a class="botao-aviso"href="{% url 'login' %}">Entrar</a></p>
+            </body>
+            {% endif %}
+            </div>
+            </section>
 
 </html>
+</body>
