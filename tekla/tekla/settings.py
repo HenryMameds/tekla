@@ -119,6 +119,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+django_heroku.settings(locals())
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
@@ -130,4 +132,3 @@ AUTH_USER_MODEL = 'teklando.Voluntario'
 LOGIN_REDIRECT_URL = 'voluntario'
 LOGOUT_REDIRECT_URL = 'index'
 
-django_heroku.settings(locals())
